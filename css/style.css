@@ -67,11 +67,20 @@ form small{font-size:12px;color:var(--grey)}form .btn{width:100%;padding:16px;fo
 footer{background:var(--wine2);color:#f1e6df;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:5vw;padding:56px 4.5vw 70px;font-size:14px}
 footer h4{margin:0 0 12px;font-size:12px;letter-spacing:.12em;font-weight:500}footer .logo{height:62px;margin-bottom:14px}footer p{margin:0 0 4px}
 .fwa{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:9}
-.fut{position:fixed;left:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;background:#000;border:0;z-index:9;cursor:pointer;display:grid;place-items:center}.fut svg{width:24px;fill:#fff}
-@media(max-width:1000px){nav,.hr .btn,.lang{display:none}#menu{display:block}header.open nav{display:flex;flex-direction:column;position:absolute;top:115px;left:0;right:0;background:var(--ivory);padding:20px 4.5vw;margin:0;z-index:5;gap:14px}
+@media(max-width:1000px){nav,.hr .btn{display:none}#menu{display:block}header.open nav{display:flex;flex-direction:column;position:absolute;top:115px;left:0;right:0;background:var(--ivory);padding:20px 4.5vw;margin:0;z-index:5;gap:14px}
 .nos,.mi,.srv,.mz,#contacto,footer,.gh,.ig{grid-template-columns:1fr}.nos img{height:80vw}.strip{grid-template-columns:1fr}.mi>img{height:110vw;order:2}.card{flex-basis:80%}.tg{grid-template-columns:1fr;gap:16px}.grid{grid-template-columns:1fr 1fr;gap:10px}.ig{flex-direction:column;align-items:flex-start;padding:40px 5vw}.hero{height:auto;min-height:520px;padding:60px 5vw}.mz img{min-height:90vw}.mi .pr{flex-direction:column}}
 
 .faq{padding:20px 3.4vw 80px}.faq .fg{display:grid;grid-template-columns:repeat(2,1fr);gap:2%;margin-top:34px}.faq .tc{margin-bottom:16px}
 .lang b{cursor:pointer;user-select:none}.lang b:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
 @media(max-width:1000px){.faq .fg{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Celular: encabezado con logo + idiomas + menú */
+@media(max-width:1000px){
+header{gap:12px;padding:0 4vw}
+header .logo{height:54px}
+.hr{gap:0}
+.lang{gap:5px}
+.lang b{width:36px;height:36px;font-size:12px}
+#menu{margin-left:0}
+}
